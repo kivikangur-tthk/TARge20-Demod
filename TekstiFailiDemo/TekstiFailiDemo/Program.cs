@@ -30,7 +30,7 @@ namespace TekstiFailiDemo
 				Console.WriteLine(rida.ToUpper());
 				rida = lugeja.ReadLine();
 			}
-
+			lugeja.Close();
 			File.WriteAllText("tervitus.txt", "Hello World\nTere Maailm");
 			File.AppendAllText("tervitus.txt", "\nPäivää Maailma");
 			string[] tervitused = File.ReadAllLines("tervitus.txt");
