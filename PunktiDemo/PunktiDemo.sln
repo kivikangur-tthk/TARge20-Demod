@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PunktiDemo", "PunktiDemo\PunktiDemo.csproj", "{3AC2C81A-BC14-4607-BBEA-7152DB1F8ABC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC2C81A-BC14-4607-BBEA-7152DB1F8ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC2C81A-BC14-4607-BBEA-7152DB1F8ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC2C81A-BC14-4607-BBEA-7152DB1F8ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC2C81A-BC14-4607-BBEA-7152DB1F8ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A475D10-25DD-468B-B61B-8E80E9A64493}
+	EndGlobalSection
+EndGlobal
