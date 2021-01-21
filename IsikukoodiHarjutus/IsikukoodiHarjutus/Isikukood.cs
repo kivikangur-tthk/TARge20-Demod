@@ -41,7 +41,6 @@ namespace IsikukoodiHarjutus
 				throw new ArgumentOutOfRangeException(nameof(isikukood), isikukood, "Isikukoodi kontrollnumber on vale.");
 			}
 		}
-
 		private bool KontrollNrÕige()
 		{
 			return ArvutaKontrollNr() == int.Parse(_ik.Substring(10, 1));
@@ -75,7 +74,10 @@ namespace IsikukoodiHarjutus
 		{
 			return int.Parse(_ik.Substring(0, 1));
 		}
-
+		/// <summary>
+		/// Loeb isikukoodist välja vajalikud andmed ja moodustab nendest kuupäeva
+		/// </summary>
+		/// <returns>saadud kuupäev</returns>
 		public DateTime AnnaSünnikuupäev()
 		{
 			return new DateTime(AnnaAasta(), AnnaKuu(), AnnaPaev());
