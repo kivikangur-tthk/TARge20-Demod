@@ -15,7 +15,7 @@ namespace LoomaÜlekateDemo
 			_onIsane = onIsane;
 		}
 
-		public void Häälitse()
+		public virtual void Häälitse()
 		{
 			Console.WriteLine("GRRRR");
 		}
