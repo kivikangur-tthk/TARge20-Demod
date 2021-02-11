@@ -15,7 +15,7 @@ namespace MajutusLiidesOmadusHarjutus
 			_kohti = kohti;
 			_kylalisi = 0;
 		}
-		public int VabuKohti { 
+		public virtual int VabuKohti { 
 			get
 			{
 				return _kohti - _kylalisi;
@@ -29,17 +29,17 @@ namespace MajutusLiidesOmadusHarjutus
 				_kylalisi = _kohti - value;
 			}
 		}
-		public int ArvutaMaksumus(int külalisi)
+		public virtual int ArvutaMaksumus(int külalisi)
 		{
 			//1.Kui külalisi on rohkem kui vabu kohti annab veateate
 			if (külalisi>VabuKohti)
 			{
-				throw new ArgumentOutOfRangeException(nameof(külalisi), "Külalisi ei tohi olla rohkem kui vabu kohti");
+				throw new ArgumentOutOfRangeException(nameof(külalisi),külalisi, $"Külalisi ei tohi olla rohkem kui vabu kohti: {VabuKohti}");
 			}
 			//2.Kui külalisi on negatiivne arv annab veateate
 			if (külalisi<0)
 			{
-				throw new ArgumentOutOfRangeException(nameof(külalisi), "Külalisi ei tohi olla negatiivne arv");
+				throw new ArgumentOutOfRangeException(nameof(külalisi),külalisi, "Külalisi ei tohi olla negatiivne arv");
 			}
 			//3.Vähendab vabu kohti külaliste arvu võrra(kui eelmised kaks ei andnud viga)
 			VabuKohti -= külalisi;
