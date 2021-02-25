@@ -37,5 +37,10 @@ namespace AbstraktneKlassDemo
 			Vorstijupp other = (Vorstijupp)obj;
 			return Math.Abs(other._pikkus - _pikkus) < täpsus && other._raadius == _raadius;
 		}
+		public override int GetHashCode()
+		{
+			//throw new Exception("No hashcode for this object possible");
+			return $"{_raadius} {_pikkus}".GetHashCode();
+		}
 	}
 }

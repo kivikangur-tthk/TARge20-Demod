@@ -15,6 +15,11 @@ namespace AbstraktneKlassDemo
 			return AnnaPõhjaÜmbermõõt() * AnnaKõrgus();
 		}
 		public double AnnaRuumala() { return AnnaKõrgus() * AnnaPõhjaPindala(); }
+
+		public double AnnaKogupindala()
+		{
+			return 2 * AnnaPõhjaPindala() + AnnaKüljePindala();
+		}
 		public override string ToString()
 		{
 			return base.ToString() +

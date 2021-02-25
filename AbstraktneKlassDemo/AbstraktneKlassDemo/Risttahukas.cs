@@ -6,19 +6,30 @@ namespace AbstraktneKlassDemo
 {
 	class Risttahukas : Kujund
 	{
+		private double _pikkus;
+		private double _laius;
+		private double _kõrgus;
+
+		public Risttahukas(double pikkus, double laius, double kõrgus)
+		{
+			_pikkus = pikkus;
+			_laius = laius;
+			_kõrgus = kõrgus;
+		}
+
 		public override double AnnaKõrgus()
 		{
-			throw new NotImplementedException();
+			return _kõrgus;
 		}
 
 		public override double AnnaPõhjaPindala()
 		{
-			throw new NotImplementedException();
+			return _pikkus * _laius;
 		}
 
 		public override double AnnaPõhjaÜmbermõõt()
 		{
-			throw new NotImplementedException();
+			return (_pikkus + _laius) * 2;
 		}
 	}
 }
