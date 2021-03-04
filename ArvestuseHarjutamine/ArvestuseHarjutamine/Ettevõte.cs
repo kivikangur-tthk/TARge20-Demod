@@ -45,6 +45,8 @@ namespace ArvestuseHarjutamine
 
 		public virtual void LisaTöötaja() { _töötajaid++; }
 
+		public void VallandaTöötaja() { _töötajaid--; }
+
 		public override string ToString()
 		{
 			return $"Kokku ettevõtteid: {_ettevõteteKogus}\n{_nimi} - tegevusala: {_tegevusala}\n\ttöötajaid: {_töötajaid}\n\tosakondi: {_osakondi}";

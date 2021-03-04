@@ -29,6 +29,16 @@ namespace ArvestuseHarjutamine
 			Console.WriteLine($"{keel}-keeles on ettevõtte nimi {_nimi}");
 		}
 
+		public new void VallandaTöötaja()
+		{
+			_töötajaid--;
+			if (TöötajateArv/100.0<=_juhatuseSuurus-1)
+			{
+				_juhatuseSuurus--;
+			}
+			
+		}
+
 		public override string ToString()
 		{
 			return base.ToString()+$"\n\triik: {_tegutsemiseRiik}\n\tjuhatuse suurus: {_juhatuseSuurus}";

@@ -32,15 +32,20 @@ namespace ArvestuseHarjutamine
 			Console.WriteLine(ettevõte.TöötajateArv);
 			Korporatsioon korporatsioon = new Korporatsioon(100, 10000, "Microsoft", "IT", "USA", 100);
 			Console.WriteLine(korporatsioon);
-			for (int i = 0; i <= 99; i++)
+			for (int i = 0; i < 101; i++)
 			{
 				korporatsioon.LisaTöötaja();
 			}
-korporatsioon.LisaTöötaja();
+			korporatsioon.LisaTöötaja();
 			Console.WriteLine(korporatsioon);
+			for (int i = 0; i < 102; i++)
+			{
+				korporatsioon.VallandaTöötaja();
+				Console.WriteLine(korporatsioon); 
+			}
 			IRahvusvaheline rahvusvaheline = korporatsioon;
 
-			rahvusvaheline.TeataNimi("eesti");
+			rahvusvaheline.TeataNimi("kreeka");
 		}
 	}
 }
