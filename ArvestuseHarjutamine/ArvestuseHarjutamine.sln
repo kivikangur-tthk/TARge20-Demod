@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OmaduseHarjutused", "OmaduseHarjutused\OmaduseHarjutused.csproj", "{24243813-5B41-4655-A2C6-D368B41CA4F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArvestuseHarjutamine", "ArvestuseHarjutamine\ArvestuseHarjutamine.csproj", "{21311CAA-E0F5-402F-AB27-208CDEC92FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24243813-5B41-4655-A2C6-D368B41CA4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24243813-5B41-4655-A2C6-D368B41CA4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24243813-5B41-4655-A2C6-D368B41CA4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24243813-5B41-4655-A2C6-D368B41CA4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21311CAA-E0F5-402F-AB27-208CDEC92FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21311CAA-E0F5-402F-AB27-208CDEC92FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21311CAA-E0F5-402F-AB27-208CDEC92FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21311CAA-E0F5-402F-AB27-208CDEC92FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9D7CBA1B-343C-4DF6-A0FA-6B95A472A3F7}
+		SolutionGuid = {83FE7534-55B4-419F-9100-B2B85E57894E}
 	EndGlobalSection
 EndGlobal
